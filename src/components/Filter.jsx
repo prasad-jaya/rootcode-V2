@@ -2,7 +2,6 @@ import { useSearchParams } from "react-router-dom";
 
 const Filter = ({options, filterField}) => {
     const [searchParams, setSearchParams] = useSearchParams();
-    //const sortBy = searchParams.get('sortBy') || '';
 
     const handleChange = (e) => {
         searchParams.set(filterField, e.target.value);

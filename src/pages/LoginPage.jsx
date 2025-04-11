@@ -31,7 +31,7 @@ const LoginPage = () => {
                         <label  className="block text-sm font-medium leading-6 text-gray-900">Email</label>
                         <div className="mt-2">
                             <input id="email" name="email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur} type="text" required className="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"/>
-                            {formik.touched.userName && formik.errors.email 
+                            {formik.touched.email && formik.errors.email 
                             ? (
                                 <p className="text-red-700 text-sm">{formik.errors.email}</p>
                             ): null }
@@ -52,7 +52,7 @@ const LoginPage = () => {
                         disabled = {formik.touched.password && formik.errors.password || formik.touched.email && formik.errors.email}
                         className="flex w-full justify-center rounded-md bg-gray-500 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm 
                         disabled:bg-gray-400 disabled:cursor-not-allowed hover:enabled:bg-gray-950 
-                        focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
                         Log In
                     </button>

@@ -1,8 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
+const API_BASE = import.meta.env.VITE_BASE_URL?.replace(/\/$/, "");
+
 const challengeApi = createApi({
     reducerPath: "challengeApi",
-    baseQuery: fetchBaseQuery({ baseUrl: "https://2hol1zaqsj.execute-api.us-east-1.amazonaws.com/dev" }),
+    baseQuery: fetchBaseQuery({ baseUrl: `${API_BASE}/dev` }),
     endpoints(builder){
         return {
             getChallenge: builder.query({

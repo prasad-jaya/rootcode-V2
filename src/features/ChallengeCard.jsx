@@ -20,7 +20,7 @@ const ChallengeCard = ({ data } = {}) => {
                     <div className="flex flex-col items-end py-2 ">
                     <button className="flex w-full justify-center rounded-md bg-gray-500 px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm 
                         disabled:bg-gray-400 disabled:cursor-not-allowed hover:enabled:bg-gray-950 
-                        focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer" onClick={() => handleChallengeClick(data.id)}>Get Started</button>
+                        focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-600 cursor-pointer" onClick={() => handleChallengeClick(data.id)}>Get Started</button>
                     </div>
                 </div>
             </div>
